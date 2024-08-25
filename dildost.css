@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #63221d;
+}
+body {
+  color: #577399;
+  font-family: "Times New Roman", Times, serif;
+}
+
+header {
+  font-family: Impact, "Arial Narrow Bold", sans-serif;
+  color: #495867;
+  background-color: #fe5f55;
+  font-size: 90%;
+  min-height: 200px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 20vh;
+  padding-top: 2em;
+  padding-left: 10%;
+}
+
+nav {
+  font-family: system-ui, "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  font-weight: bold;
+  text-align: right;
+  background-color: white;
+  margin: 0;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding-right: 2em;
+  font-size: 1.2em;
+}
+
+nav :link {
+  color: #3f2860;
+}
+
+nav :visited {
+  color: #ff0c0c;
+}
+
+nav :hover {
+  color: #601b0a;
+}
+
+nav li {
+  display: inline;
+  padding-left: 4em;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+h1 {
+  line-height: 300%;
+  text-indent: 1em;
+}
+
+footer {
+  font-size: small;
+  font-style: italic;
+  text-align: center;
+}
+
+dd {
+  font-size: 70%;
+}
+
+#wrapper {
+  background-color: #f5f5f5;
+  padding: 2em;
+}
+
+#icon {
+  background-image: url(dildosticon.png);
+}
+
+#sh {
+  height: 200px;
+  width: 300px;
+  background-image: url(stethescopeheart.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  float: right;
+}
+
+#fig1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#lifestylepng1 {
+  height: 200px;
+  width: 300px;
+  background-image: url(womanholdingfoodcelebration.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#flow {
+  display: block;
+}
+
+nav .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+nav .dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+nav .dropdown-content li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+nav .dropdown-content li a {
+  display: block;
+  color: #3f2860;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+nav .dropdown-content li a:hover {
+  background-color: #ddd;
+}
+
+nav .dropdown:hover .dropdown-content,
+nav .dropdown:hover .dropdown-content .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+table {
+  border: 1px solid #40407a;
+  border-collapse: collapse;
+  margin-bottom: 2em;
+  min-width: 400px;
+}
+td,
+th {
+  padding: 0.5em;
+  border: 1px solid #40407a;
+}
+tr:nth-of-type(even) {
+  background-color: #e4ba57;
+}
+
+@media (min-width: 600px) {
+  nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  #flow {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  form {
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 50%;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 9em 1fr;
+    grid-template-rows: auto;
+  }
+
+  form label,
+  form input {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    font-size: 120%;
+  }
+  #wrapper {
+    margin: auto;
+    width: 80%;
+  }
+}
+
+#coffee,
+#chai {
+  width: 20%;
+  float: right;
+}
+
+form {
+  display: flex;
+  flex-flow: column nowrap;
+}
+input,
+datalist,
+textarea {
+  margin-bottom: 0.5em;
+}
+.btn {
+  width: 10em;
+  float: left;
+  background-color: #63221d;
+  color: white;
+}

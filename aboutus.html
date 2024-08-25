@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--
+        Author: Ananya Shrivastava
+        Date: 6/17/24
+        Assignment: Assignment #5: Final Project Phase 2
+    -->
+  <head>
+    <title>Dil Dost - About Us</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="dildost.css" />
+  </head>
+
+  <body>
+    <header><h1>Dil Dost:: About Us</h1></header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="hhimportance.html">Mission</a></li>
+        <li class="dropdown">
+          <a href="#">LifeStyle Changes</a>
+          <ul class="dropdown-content">
+            <li><a href="lifestyle.html">Lifestyle</a></li>
+            <li><a href="exercise.html">Exercise</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Food</a>
+          <ul class="dropdown-content">
+            <li><a href="recipie.html">Menu</a></li>
+            <li><a href="dalgona.html">Dalgona</a></li>
+            <li><a href="gingerchai.html">Chai with Ginger</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div id="wrapper">
+      <main>
+        <h2>About Us</h2>
+        <p>
+          Dil Dost came to be due to an English assignment. It's always English
+          Assignments that spur Ananya Shrivastava to create and follow a new
+          direction. With a history in mental health advocacy, Ananya noticed
+          the disparities in not just mental, but cardiovascular health for
+          South Asian Americans too. After extensive research and writing a
+          paper on the health care system regarding the cardiovascular health of
+          South Asians, our founder decided to further her initiative and
+          continue advocacy through DilDost. Her mission is to help SAAs to be
+          able to understand and care for their heart health amidst this hidden
+          cardiovascular public crisis.
+        </p>
+        <h3>Donate!</h3>
+        <form>
+          <form method="post" action="mailto:shrivastava.anany@student.ccm.edu">
+              <label for="myName">Name:</label>
+              <input type="text" id="myName" name="myName" placeholder="Your full name" required />
+    
+              <label for="myEmail">E-mail:</label>
+              <input type="email" id="myEmail" name="myEmail" placeholder="you@yourdomain.com" required />
+
+              <label for="myDonation">Enter donation amount (USD):</label>
+              <input type="number" id="myTel" name="myDonation" placeholder="10" required />
+    
+              <label for="refferal">Where did you hear about us?</label>
+              <select size="1" id="refferal"
+              name="refferal"  required>
+                   <option>Select an option from dropdown menu</option>
+                   <option value="1">Social Media</option>
+                   <option value="2">Friend</option>
+                   <option value="3">Mail</option>
+                  </select>
+    
+              <label for="comments">Any Comments:</label>
+              <textarea
+                id="comments"
+                name="comments"
+                rows="5"
+                cols="20"
+                placeholder="Your comments here"
+                required
+              ></textarea>
+    
+              <input class = "btn" type="submit" value="Submit" />       
+            </form>
+      </main>
+
+      <footer>
+        Copyright © 2024 DilDost <br />
+        <a href="mailto:shrivastava.anany@student.ccm.edu"
+          >Ananya Shrivastava: shrivastava.anany@student.ccm.edu</a
+        >
+      </footer>
+    </div>
+  </body>
+</html>
